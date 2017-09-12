@@ -39,23 +39,21 @@ Microsoft Teams supports the following formatting options:
 
 ## Formatting text content
 
-Microsoft Teams supports a subset of Markdown and XML (HTML) formatting tags. The text property of rich cards offers more formatting options than do text-only messages.
+Microsoft Teams supports a subset of Markdown and XML (HTML) formatting tags. Rich cards do not support Markdown; messages and cards do not support table formatting.
 
-| Style | Text-only message | Rich cards | Example |
-| --- | --- | --- | --- |
-| bold | ✔ | ✘ | **text** |
-| italic | ✔ | ✔ | *text* |
-| header (levels 1&ndash;5) | ✘ | ✔ | **Text** |
-| strikethrough | ✘ | ✔ | ~~text~~ |
-| horizontal rule | ✘ | ✘ | &#8213;&#8213;&#8213;&#8213;&#8213; |
-| unordered list | ✘ | ✔ | <ul><li>text</li><li>text</li></ul> |
-| ordered list | ✘ | ✔ | <ol><li>text</li><li>text</li></ol> |
-| preformatted text | ✔ | ✔ | `text` |
-| blockquote | ✘ | ✔ | <blockquote>text</blockquote> |
-| hyperlink | ✔ | ✔ | [Bing](https://www.bing.com/) |
-| image link | ✔ | ✘ | <img src="http://aka.ms/Fo983c" alt="Duck on a rock" height="75" width="112"></img> |
-
->**Note:** Messages and cards do not support table formatting.
+| Style | Text-only message | Rich cards (XML only) | Example | Markdown | XML (HTML) |
+| --- | --- | --- | --- | --- | --- |
+| bold | ✔ | ✘ | **text** | `**text**` | `<strong>text</strong>` |
+| italic | ✔ | ✔ | *text* | `*text*` | `<em>text</em>` |
+| header (levels 1&ndash;5) | ✘ | ✔ | **Text** | &mdash; | `<h3>Text</h3>` |
+| strikethrough | ✘ | ✔ | ~~text~~ | &mdash; | `<strike>text</strike>` |
+| horizontal rule | ✘ | ✘ | <hr> | &mdash; | &mdash; |
+| unordered list | ✘ | ✔ | <ul><li>text</li><li>text</li></ul> | &mdash; | `<ul><li>text</li><li>text</li></ul>` |
+| ordered list | ✘ | ✔ | <ol><li>text</li><li>text</li></ol> | &mdash; | `<ol><li>text</li><li>text</li></ol>` |
+| preformatted text | ✔ | ✔ | `text` | `` `text` `` | `<pre>text</pre>` |
+| blockquote | ✘ | ✔ | <blockquote>text</blockquote> | &mdash; | `<blockquote>text</blockquote>` |
+| hyperlink | ✔ | ✔ | [Bing](https://www.bing.com/) | `[Bing](https://www.bing.com/)` | `<a href="https://www.bing.com/">Bing</a>` |
+| image link | ✔ | ✘ | <img src="http://aka.ms/Fo983c" alt="Duck on a rock"></img> | `![Duck on a rock](http://aka.ms/Fo983c)` | `<img src="http://aka.ms/Fo983c" alt="Duck on a rock"></img>` |
 
 ## Picture messages
 
