@@ -39,21 +39,23 @@ Microsoft Teams supports the following formatting options:
 
 ## Formatting text content
 
-Microsoft Teams supports a subset of Markdown and XML formatting tags. The text property of rich cards offers more formatting options than do text-only messages.
+Microsoft Teams supports a subset of Markdown and XML (HTML) formatting tags. The text property of rich cards offers more formatting options than do text-only messages.
 
-| Style | Text-only message | Rich cards |
-| --- | --- | --- |
-| bold | ✔ | ✘ |
-| italic | ✔ | ✔ |
-| header (levels 1&ndash;5) | ✘ | ✔ |
-| strikethrough | ✘ | ✔ |
-| horizontal rule | ✘ | ✘ |
-| unordered list | ✘ | ✔ |
-| ordered list | ✘ | ✔ |
-| preformatted text | ✔ | ✔ |
-| blockquote | ✘ | ✔ |
-| hyperlink | ✔ | ✔ |
-| image link | ✔ | ✘ |
+| Style | Text-only message | Rich cards | Example |
+| --- | --- | --- | --- |
+| bold | ✔ | ✘ | **text** |
+| italic | ✔ | ✔ | *text* |
+| header (levels 1&ndash;5) | ✘ | ✔ | **Text** |
+| strikethrough | ✘ | ✔ | ~~text~~ |
+| horizontal rule | ✘ | ✘ | &#8213;&#8213;&#8213;&#8213;&#8213; |
+| unordered list | ✘ | ✔ | <ul><li>text</li><li>text</li></ul> |
+| ordered list | ✘ | ✔ | <ol><li>text</li><li>text</li></ol> |
+| preformatted text | ✔ | ✔ | `text` |
+| blockquote | ✘ | ✔ | <blockquote>text</blockquote> |
+| hyperlink | ✔ | ✔ | [Bing](https://www.bing.com/) |
+| image link | ✔ | ✘ | <img src="http://aka.ms/Fo983c" alt="Duck on a rock" height="75" width="112"></img> |
+
+>**Note:** Messages and cards do not support table formatting.
 
 ## Picture messages
 
