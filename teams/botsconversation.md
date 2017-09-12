@@ -32,14 +32,32 @@ Microsoft Teams supports the following formatting options:
 | TextFormat value | Description |
 | --- | --- |
 | plain | The text should be treated as raw text with no formatting applied at all |
-| markdown | The text should be treated as Markdown formatting and rendered on the channel as appropriate; see [Message text and format](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-create-messages#message-text-and-format) for supported styles |
-| xml | The text is simple XML markup; see [Message text and format](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-create-messages#message-text-and-format) for supported styles |
+| markdown | The text should be treated as Markdown formatting and rendered on the channel as appropriate; see [Formatting text content](#formatting-text-content) for supported styles |
+| xml | The text is simple XML markup; see [Formatting text content](#formatting-text-content) for supported styles |
 
 >**Note:** On hero and thumbnail cards, message format is supported only on the text property. Formatting is not supported on the title and subtitle properties at this time.
 
+## Formatting text content
+
+Microsoft Teams supports a subset of Markdown and XML formatting tags. The text property of rich cards offers more formatting options than do text-only messages.
+
+| Style | Text-only message | Rich cards |
+| --- | --- | --- |
+| bold | ✔ | ✘ |
+| italic | ✔ | ✔ |
+| header (levels 1&ndash;5) | ✘ | ✔ |
+| strikethrough | ✘ | ✔ |
+| horizontal rule | ✘ | ✘ |
+| unordered list | ✘ | ✔ |
+| ordered list | ✘ | ✔ |
+| preformatted text | ✔ | ✔ |
+| blockquote | ✘ | ✔ |
+| hyperlink | ✔ | ✔ |
+| image link | ✔ | ✘ |
+
 ## Picture messages
 
-Pictures are sent by adding attachments to a message.  You can find more information on attachments in the [Bot Framework documentation](https://docs.botframework.com/en-us/core-concepts/attachments/).
+Pictures are sent by adding attachments to a message. You can find more information on attachments in the [Bot Framework documentation](https://docs.botframework.com/en-us/core-concepts/attachments/).
 
 Pictures can be at most 1024×1024 and 1 MB in PNG, JPEG, or GIF format; animated GIF is not officially supported.
 
