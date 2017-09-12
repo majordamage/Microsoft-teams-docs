@@ -35,11 +35,13 @@ Microsoft Teams supports the following formatting options:
 | markdown | The text should be treated as Markdown formatting and rendered on the channel as appropriate; see [Formatting text content](#formatting-text-content) for supported styles |
 | xml | The text is simple XML markup; see [Formatting text content](#formatting-text-content) for supported styles |
 
->**Note:** On hero and thumbnail cards, message format is supported only on the text property. Formatting is not supported on the title and subtitle properties at this time.
-
 ## Formatting text content
 
-Microsoft Teams supports a subset of Markdown and XML (HTML) formatting tags. Rich cards do not support Markdown; messages and cards do not support table formatting.
+Microsoft Teams supports a subset of Markdown and XML (HTML) formatting tags, with the following limitations:
+
+* Rich cards support formatting in the text property only, not in the title or subtitle properties
+* Rich cards do not support Markdown
+* Messages and cards do not support table formatting
 
 | Style | Text-only message | Rich cards (XML only) | Example | Markdown | XML (HTML) |
 | --- | --- | --- | --- | --- | --- |
